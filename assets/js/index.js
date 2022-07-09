@@ -99,13 +99,13 @@ function buscar() {
 
   // Validacion de campos vacios
   if (Number.isInteger(cantidadCuartos) == false || Number.isInteger(metrosDesde) == false || Number.isInteger(metrosHasta) == false) {
-    alert ("Por favor complete todos los campos");
+    alert("Por favor complete todos los campos");
     return;
-  } 
+  }
 
   // Si ingresan valores 0 arrojar mensaje de ingresar valor validos
   if (cantidadCuartos === 0 || metrosDesde === 0 || metrosHasta === 0) {
-    alert ("Por favor ingrese valores validos");
+    alert("Por favor ingrese valores validos");
     return;
   }
 
@@ -126,7 +126,7 @@ function buscar() {
 // Aqui voy a cargar el evento click del boton BUSCAR
 function cargarEventoBotonBuscar() {
   const botonBuscar = document.querySelector("#boton-buscar");
-  botonBuscar.addEventListener("click", function() {
+  botonBuscar.addEventListener("click", function () {
     buscar();
   })
 }
